@@ -10,3 +10,4 @@ def print_multiplication_table():
 
 # Call the function to execute the script
 print_multiplication_table()
+python3 multiplication_table.py
