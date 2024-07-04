@@ -1,3 +1,5 @@
+# main.py
+from arithmetic_operations import perform_operation
 def perform_operation(num1, num2, operation):
     """
     Performs basic arithmetic operations (+, -, *, /) on num1 and num2 based on the operation parameter.
