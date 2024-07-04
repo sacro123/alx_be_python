@@ -19,40 +19,11 @@ def perform_operation(num1, num2, operation):
     elif operation == 'multiply':
         result = num1 * num2
     elif operation == 'divide':
-    if num2 != 0:
+        if num2 != 0:
             result = num1 / num2
         else:
             result = "Error: Division by zero"
-        else:
+    else:
         result = "Error: Invalid operation"
     
     return result
-
-from arithmetic_operations import perform_operation
-
-def main():
-    # Example usage of perform_operation function
-    num1 = 10.0
-    num2 = 3.0
-    
-    # Addition
-    print(f"{num1} + {num2} = {perform_operation(num1, num2, 'add')}")
-    
-    # Subtraction
-    print(f"{num1} - {num2} = {perform_operation(num1, num2, 'subtract')}")
-    
-    # Multiplication
-    print(f"{num1} * {num2} = {perform_operation(num1, num2, 'multiply')}")
-    
-    # Division
-    print(f"{num1} / {num2} = {perform_operation(num1, num2, 'divide')}")
-    
-    # Division by zero example
-    print(f"{num1} / 0 = {perform_operation(num1, 0, 'divide')}")
-    
-    # Invalid operation example
-    print(f"{num1} # {num2} = {perform_operation(num1, num2, 'invalid')}")
-
-if __name__ == "__main__":
-    main()
-    python main.py
