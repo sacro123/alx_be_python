@@ -7,6 +7,7 @@ def convert_to_celsius(fahrenheit):
 def convert_to_fahrenheit(celsius):
   fahrenheit = celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
     return fahrenheit
+
 def main():
     while True:
         try:
@@ -27,3 +28,6 @@ def main():
         
         except ValueError as ve:
             print(f"Error: {ve}. Please try again.")
+
+      if __name__ == "__main__":
+    main()
