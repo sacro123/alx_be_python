@@ -1,14 +1,17 @@
-# Define global conversion factors
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 
 def convert_to_celsius(fahrenheit):
-    
+    """
+    Convert temperature from Fahrenheit to Celsius.
+    """
     celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
     return celsius
 
 def convert_to_fahrenheit(celsius):
-    
+    """
+    Convert temperature from Celsius to Fahrenheit.
+    """
     fahrenheit = celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
     return fahrenheit
 
@@ -34,5 +37,5 @@ def main():
             print(f"Error: {ve}. Please try again.")
 
 # Entry point of the script
-if __name__ == "__main__"
-main()
+if __name__ == "__main__":
+    main()
