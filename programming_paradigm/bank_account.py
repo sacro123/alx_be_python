@@ -68,4 +68,4 @@ def main():
 if __name__ == "__main__":
     main()
     
-    python main-0.py balance --initial_balance 200
+    
