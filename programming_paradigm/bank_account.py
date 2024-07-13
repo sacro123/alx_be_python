@@ -67,3 +67,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    python main-0.py deposit 100 --initial_balance 200
+    python main-0.py withdraw 50 --initial_balance 200
+    python main-0.py balance --initial_balance 200
